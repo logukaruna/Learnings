@@ -1,0 +1,17 @@
+
+Name: Logu
+Age: 32
+Logu is eligible to vote
+----------------------------
+Name: 21
+Age: 56
+21 is eligible to vote
+----------------------------
+Name: Logu
+Age: 12
+Logu is not eligible to vote
+----------------------------
+Name: Logu
+Age: 21
+Logu is eligible to vote
+----------------------------
