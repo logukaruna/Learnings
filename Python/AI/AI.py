@@ -31,7 +31,7 @@ def get_command():
     with sr.Microphone() as source:
         print("Listening...")
         r.pause_threshold = 1
-        audio = r.listen(source, timeout=10, phrase_time_limit=5)
+        audio = r.listen(source, timeout=20, phrase_time_limit=10)
     
     try:
         print("Recognizing...")
@@ -76,7 +76,7 @@ def send_message(peoples_data):
         if person["name"].lower() == name:
             speak(engine, f"What message do you want to send to {name}?")
             msg = get_command().lower()
-            phone_number = person["number"]
+            phone_number = person["number 1"]
             speak(engine, "Please specify the time you want to send the message.")
             time_input = get_command().lower()
             try:

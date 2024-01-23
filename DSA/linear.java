@@ -4,31 +4,30 @@ public class linear {
     public static void main(String[] args) {
 
         int arr[] = { 25, 45, 65, 70, 76 };
-        int traget = 45;
+        int traget = 65;
      //   int linearsearch = linearSearch(arr, traget);
      //   System.out.println("Element found at " + linearsearch);
-        int binary = binarySearh(arr, traget);
+        int binary = binarySearh(arr, traget, 0, arr.length - 1);
         System.out.println("Element found at " + binary);
     }
     
-    private static int binarySearh(int[] arr, int traget) {
-       int left = 0;
-       int right = arr.length - 1;
-       while (left <= right){
+    public static int binarySearh(int[] arr, int traget, int left, int right) {
+      
+       if(left <= right){
            int mid = (left + right)/ 2;
            if (arr[mid] == traget) 
         {
             return mid;   
         }
         else if (arr[mid] < traget) {
-            left = mid + 1;
+           return binarySearh(arr, traget, left + 1, right);
         }
         else
         {
-            right = mid - 1;
+           return binarySearh(arr, traget, left, right - 1);
         }
        }
-       return -1;
+    return -1;
 
     }
 
