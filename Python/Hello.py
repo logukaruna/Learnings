@@ -4,7 +4,6 @@
 #         print("You are not eligible to vote")
 #     else:
 #         print("you are eligible to vote")
-
 # validator()
 
 import array

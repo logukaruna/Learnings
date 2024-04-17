@@ -11,7 +11,7 @@ public class Bubble {
         }
         
         for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len - 1; j++) {
+            for (int j = 0; j < len - i - 1; j++) { //Doing this len - i - 1 will help in reducing the time by not checking the last value of the array
                 if (arr[j] > arr[j+1]) {
                     temp = arr[j];
                     arr[j] = arr[j + 1];
