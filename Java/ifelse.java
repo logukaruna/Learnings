@@ -1,8 +1,11 @@
+import java.util.*;
+
 class ifelse {
     
     public static void main(String[] args) {
-        int age;
-        age = 9;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your age:");
+        int age = input.nextInt();
         if (age >= 18) {
             System.out.println("You are eligible to vote");
         }
