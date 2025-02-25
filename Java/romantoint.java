@@ -46,6 +46,7 @@ class romantoint {
             }
             break;
         }
+        input.close();
     }        
 
 }

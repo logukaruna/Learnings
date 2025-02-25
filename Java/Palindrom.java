@@ -18,5 +18,7 @@ public class Palindrom {
         else {
             System.out.println("The given word is not a palindrome");
         }
+
+        input.close();
     }
 }

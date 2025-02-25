@@ -10,6 +10,7 @@ class Voter {
         } else {
             System.out.println("You are not Eligible to Vote...!!");
         }
+        input.close();
     }
 
 }
@@ -22,6 +23,8 @@ class PrintNumbers {
         for (int i = 0; i < num; i++) {
             System.out.println(i);
         }
+
+        input.close();
     }
 }
     
@@ -42,6 +45,7 @@ public class classObject {
         System.out.println("Enter Tool Number:");
         Scanner input = new Scanner(System.in);
         int ch = input.nextInt();
+
         
         switch (ch) {
             case 1:
@@ -56,5 +60,6 @@ public class classObject {
                 System.out.println("Invalid Option");
 
         }
+        input.close();
     }
 }

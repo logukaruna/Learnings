@@ -30,6 +30,8 @@ public class Palindrome_Zoho {
         }
 
         System.out.println("Output: " + Output);
+
+        input.close();
         
     } 
     }

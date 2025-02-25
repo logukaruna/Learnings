@@ -43,6 +43,7 @@ public class version_Zoho {
         } else {
             System.out.println("Upgraded Version");
         }
+        s.close();
 
     }
 

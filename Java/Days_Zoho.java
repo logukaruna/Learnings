@@ -31,5 +31,6 @@ public class Days_Zoho {
 
         long days = ChronoUnit.DAYS.between(dt1, dt2);
         System.out.println("The days between " + dt1 +" and " + dt2 + " is: " + days);
+        input.close();
     }
 }
